@@ -17,7 +17,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
 }
 
 .start-section {
-    background-image: url(/assets/images/start-panda.jpg);
+    background-image: url(../../assets/images/start-panda.jpg);
     background-repeat: no-repeat;
 }
 
