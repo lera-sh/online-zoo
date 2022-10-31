@@ -3,7 +3,7 @@ const main = document.querySelector('.main')
 const designer = document.querySelector('.designer-link')
 
 list.forEach(item =>{
-        item.addEventListener('mousedown', (e) =>{
+    item.addEventListener('mousedown', (e) =>{
         list.forEach(el=>{ el.classList.remove('highlighted'); });
         item.classList.add('highlighted')
     })
@@ -45,9 +45,10 @@ list.forEach(item =>{
 })
 
 const footer_list = document.querySelectorAll('.footer-nav li a')
+const footer_main = document.querySelector('.footer-main')
 
 footer_list.forEach(item =>{
-        item.addEventListener('mousedown', (e) =>{
+    item.addEventListener('mousedown', (e) =>{
         footer_list.forEach(el=>{ el.classList.remove('highlighted'); });
         item.classList.add('highlighted')
     })
@@ -56,14 +57,14 @@ footer_list.forEach(item =>{
 footer_list.forEach(item =>{
     item.addEventListener('mouseup', (e) =>{
         item.classList.remove('highlighted');
-        main.classList.add('highlighted');
+        footer_main.classList.add('highlighted');
     })
 })
 
 footer_list.forEach(item =>{
     item.addEventListener('dragend', (e) =>{
         item.classList.remove('highlighted');
-        main.classList.add('highlighted');
+        footer_main.classList.add('highlighted');
     })
 })
 
