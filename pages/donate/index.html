@@ -4,9 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../pages/donate/style.css">
+    <link rel="icon" href="../../assets/icons/bamboo.svg">
     <title>Donate</title>
 </head>
 <body>
-
+    <wrapper class="wrapper">
+        <div class="start-section" id="start-section">
+            <header class="header-section">
+                <div class="start">
+                    <div class="logo-section">
+                        <a class="logo-link" href="../../index.html" target="_blank">
+                            <img class="logo-icon" src="../../assets/icons/bamboo.svg" alt="bamboo-icon">
+                            <h1 class="logo-title">PetStory online</h1>
+                        </a>
+                    </div>
+                    <nav class="nav-section">
+                        <ul class="nav-items">
+                            <li class="nav-item"><a class="nav-link" href="../../index.html" target="_blank">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#no_scroll">Map</a></li></li>
+                            <li class="nav-item"><a class="nav-link" href="#no_scroll">Zoos</a></li></li>
+                            <li class="nav-item"><a class="highlighted main nav-link" href="#no_scroll">Donate</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#start-section">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="designer-section">
+                    <p class="designed-by"><a class="designer-link" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank">Designed by ©</a></p>
+                </div>
+            </header>
+            <div class="start-content"></div>
+        </div>
+        <main class="main">
+            <div class="feed-section">
+                <div class="donation-info">
+                    <h3 class="donation-title">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
+                    <p class="donation-text">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</p>
+                    <h4 class="donation-subtitle">Donation Information</h4>
+                </div>
+                <div class="feed-container">
+                    <div class="feed-description">
+                        <h2 class="feed-title">Pick and feed a friend</h2>
+                        <h4 class="feed-subtitle">We know the animals bring you joy, and in these extraordinary times, we&#8217;re glad.</h3>
+                    </div>
+                    <div class="feed-animal-container">
+                        <div class="animal-amount-container">
+                            <div class="diet-container">
+                                <p class="diet-num">4</p>
+                                <div class="diet-text">Panda diet for the day.</div>
+                            </div>
+                            <div class="multiple-img-container">
+                                <img class="multiple-img" src="../../assets/icons/multiple.png" alt="img">
+                            </div>
+                            <div class="animal-img-container">
+                                <img class="animal-img" src="../../assets/images/panda-widget.png" alt="panda">
+                            </div>
+                        </div>
+                        <div class="feed-friends-choise">
+                            <p class="feed-friends-text">Amount</p>
+                            <div class="feed-slider-container">
+                                <div class="feed-slider"></div>
+                            </div>
+                            <div class="feed-sum-container">
+                                <div class="feed-sum-list">
+                                    <input type="radio" name="dot" id="dot" class="feed-sum-input" value="5000">
+                                    <label for="dot" class="feed-sum-num">$5000</label>
+                                </div>
+                                <div class="feed-sum-list">
+                                    <input type="radio" name="dot" id="dot2" class="feed-sum-input" value="2000">
+                                    <label for="dot2" class="feed-sum-num">$2000</label>
+                                </div>
+                                <div class="feed-sum-list highlighted-num">
+                                    <input type="radio" name="dot" id="dot3" class="feed-sum-input" value="1000" checked>
+                                    <label for="dot3" class="feed-sum-num">$1000</label>
+                                </div>
+                                <div class="feed-sum-list">
+                                    <input type="radio"  name="dot" id="dot4" class="feed-sum-input" value="500">
+                                    <label for="dot4" class="feed-sum-num">$500</label>
+                                </div>
+                                <div class="feed-sum-list">
+                                    <input type="radio"  name="dot" id="dot5" class="feed-sum-input" value="250">
+                                    <label for="dot5" class="feed-sum-num">$250</label>
+                                </div>
+                                <div class="feed-sum-list">
+                                    <input type="radio" name="dot" id="dot6" class="feed-sum-input" value="100">
+                                    <label for="dot6" class="feed-sum-num">$100</label>
+                                </div>
+                                <div class="feed-sum-list">
+                                    <input type="radio"  name="dot" id="dot7" class="feed-sum-input" value="50">
+                                    <label for="dot7" class="feed-sum-num">$50</label>
+                                </div>
+                                <div class="feed-sum-list">
+                                    <input type="radio" name="dot" id="dot8" class="feed-sum-input" value="25">
+                                    <label for="dot8" class="feed-sum-num">$25</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="another-amount">
+                            <div class="feed-amount-input-container">
+                                <input type="number" placeholder="Another amount" value="1000" class="feed-amount-input" max="9999" min="1" maxlength="4" name="donation_amount" id="donation_amount">
+                                <p class="feed-amount-icon">$</p>
+                            </div>
+                            <div class="feed-choice-container">
+                                <div class="feed-choice">
+                                    <input class="feed-choice-input" type="radio" name="radio_period" id="choice_monthly"/>
+                                    <label for="choice_monthly" class="feed-choice-text">Monthly</label>
+                                </div>
+                                <div class="feed-choice">
+                                    <input class="feed-choice-input" type="radio" name="radio_period" id="choice_once" checked>
+                                    <label for="choice_once" class="feed-choice-text">Once</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-button-container">
+                        <a class="feed-button-link" href="#no_scroll">
+                            <button class="feed-button">Feed a friend now</button>
+                        </a>
+                    </div>
+                    <div class="share-section">
+                        <p class="share-text">Share with your friends on social networks </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer-section">
+            <div class="footer-logo">
+                <div class="logo-section">
+                    <a class="logo-link" href="../../index.html" target="_blank">
+                        <h1 class="logo-title">PetStory online</h1>
+                    </a>
+                </div>
+                <div class="footer-submit">
+                    <h4 class="subscribe-title">Subscribe to our news</h4>
+                    <div class="subscribe-form">
+                        <input class="email-place" type="email" placeholder="Enter your email" required>
+                        <button class="submit-button">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-button-container">
+                <a class="footer-button-link" href="#start-section">
+                    <button class="footer-button">Donate for volunteers</button>
+                </a>
+            </div>
+            <div class="contacts-container">
+                <div class="social-networks">
+                    <ul class="social-items">
+                        <li class="social-item">
+                            <a class="social-link" href="https://www.facebook.com/" target="_blank">
+                                <div class="social-icon-container">
+                                    <img class="social-icon" src="../../assets/icons/facebook-icon.png" alt="facebook-icon">
+                                </div>
+                                <p class="social-text">Facebook</p>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="https://twitter.com/" target="_blank">
+                                <div class="social-icon-container">
+                                    <img class="social-icon" src="../../assets/icons/twitter-icon.png" alt="twitter-icon">
+                                </div>
+                                <p class="social-text">Twitter</p>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="https://www.instagram.com/" target="_blank">
+                                <div class="social-icon-container">
+                                    <img class="social-icon" src="../../assets/icons//instagram-icon.png" alt="instagram-icon">
+                                </div>
+                                <p class="social-text">Instagram</p>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="https://www.youtube.com/" target="_blank">
+                                <div class="social-icon-container">
+                                    <img class="social-icon" src="../../assets/icons/youtube-icon.png" alt="youtube-icon">
+                                </div>
+                                <p class="social-text">You Tube</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer-nav">
+                    <ul class="nav-items">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html" target="_blank">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#no_scroll">Map</a></li></li>
+                        <li class="nav-item"><a class="nav-link" href="#no_scroll">Zoos</a></li></li>
+                        <li class="nav-item"><a class="nav-link" href="#start-section">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-designer">
+                    <a class="footer-designer-link" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1" target="_blank">
+                        <p class="footer-designer-text">Designed by Alisa Samborskaya</p>
+                        <p class="footer-designer-text">©RSSchool & ©Yem Digital 2021</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </wrapper>
+    <script type="text/javascript" src="../../pages/donate/index.js"></script>
 </body>
 </html>
