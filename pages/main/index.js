@@ -45,11 +45,8 @@ list.forEach(item =>{
 })
 
 const footer_list = document.querySelectorAll('.footer-nav li a')
-const footer_main = document.querySelector('.footer-main')
-
 footer_list.forEach(item =>{
     item.addEventListener('mousedown', (e) =>{
-        footer_list.forEach(el=>{ el.classList.remove('highlighted'); });
         item.classList.add('highlighted')
     })
 })
@@ -57,14 +54,12 @@ footer_list.forEach(item =>{
 footer_list.forEach(item =>{
     item.addEventListener('mouseup', (e) =>{
         item.classList.remove('highlighted');
-        footer_main.classList.add('highlighted');
     })
 })
 
 footer_list.forEach(item =>{
     item.addEventListener('dragend', (e) =>{
         item.classList.remove('highlighted');
-        footer_main.classList.add('highlighted');
     })
 })
 
@@ -79,4 +74,3 @@ submit.addEventListener('click', function() {
         submit.classList.add('mistaken');
     }
 })
-
