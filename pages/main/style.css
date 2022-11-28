@@ -206,6 +206,12 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
 }
 
 @media screen and (max-width: 639px) {
+    .header-section {
+        padding: 3px 10px;
+    }
+    .logo-section {
+        width: 47px;
+    }
     .logo-title {
         font-size: 13px;
         line-height: 15px;
@@ -1973,7 +1979,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
         justify-content: center;
         margin: 0;
         margin-bottom: 45px;
-        margin-left: 7px;
+        margin-right: 7px;
         padding-bottom: 0;
         width: 100%;
     }
