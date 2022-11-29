@@ -110,6 +110,10 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
     display: none;
 }
 
+.menu-container {
+    display: none;
+}
+
 @media screen and (max-width: 1570px) {
     .header-section {
         padding: 15px 180px;
@@ -140,6 +144,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
 @media screen and (max-width: 1300px) {
     .header-section {
         padding: 15px 90px;
+        position: relative;
     }
     .logo-section {
         padding: 3px 0;
@@ -176,14 +181,23 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
 @media screen and (max-width: 999px) {
     .header-section {
         padding: 3px 20px;
+        position: fixed;
+        width: -webkit-fill-available;
+        z-index: 50;
     }
     .logo-section {
         border: none;
         padding: 0;
     }
+    .logo-title {
+        font-size: 12px;
+        line-height: 15px;
+        width: 47px;
+    }
     .logo-icon {
-        left: 33px;
-        top: 23px;
+        left: 26px;
+        top: 18px;
+        width: 7px;
     }
     .nav-section {
         display: none;
@@ -203,6 +217,55 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
         height: 2px;
         width: 18px;
     }
+    .block {
+        display: block;
+    }
+    .menu-container {
+        background-color: #fff;
+        left: 0;
+        padding: 10px 10px 40px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .menu-item {
+        color: #333B41;
+        font-size: 16px;
+        line-height: 22px;
+        list-style: none;
+        padding-bottom: 15px;
+    }
+    .menu-item:last-child {
+        padding-bottom: 0;
+    }
+    .menu-link {
+        color: #333B41;
+        font-family: 'Roboto', 'Helvetica', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        text-decoration: none;
+    }
+    .menu-logo-container {
+        border: 1px solid #fe9013;
+        margin-bottom: 30px;
+        width: 66px;
+    }
+    .menu-logo-icon {
+        left: 20px;
+        position: absolute;
+        top: 30px;
+    }
+    .menu-logo-title {
+        color: #fe9013;
+        font-family: 'Roboto', 'Helvetica', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: center;
+        width: 66px;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -217,7 +280,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
         line-height: 15px;
     }
     .logo-icon {
-        left: 43px;
+        left: 15px;
         top: 18px;
         width: 7px;
     }
@@ -375,7 +438,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
 
 @media screen and (max-width: 999px) {
     .start-content {
-        padding: 10px 70px 40px 20px;
+        padding: 44px 70px 40px 20px;
     }
     .ellipse-img {
         width: 270px;
@@ -383,9 +446,9 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
     }
     .start-title {
         font-size: 60px;
-        left: calc(50% - 2px/2 + 30px);
+        left: calc(50% - 2px/2 + 80px);
         line-height: 50px;
-        top: 90px;
+        top: 70px;
         width: 300px;
     }
     .start-button {
@@ -401,7 +464,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
         font-size: 54px;
         left: calc(50% - 2px/2 + 20px);
         line-height: 41px;
-        top: 100px;
+        top: 80px;
         width: 300px;
     }
     .start-button-section {
@@ -420,7 +483,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
         font-size: 54px;
         left: calc(50% - 2px/2 + 20px);
         line-height: 41px;
-        top: 100px;
+        top: 80px;
         width: 300px;
     }
     .start-button-section {
@@ -433,7 +496,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
 
 @media screen and (max-width: 639px) {
     .start-content {
-        padding: 20px 30px 45px 20px;
+        padding: 56px 30px 45px 20px;
     }
     .ellipse-img {
         width: 119px;
@@ -653,7 +716,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
         position: relative;
         bottom: 100px;
         width: auto;
-        bottom: 150px;
+        bottom: 140px;
     }
     .backstage-subtitle {
         padding-bottom: 10px;
@@ -944,6 +1007,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
 
 @media screen and (max-width: 768px) {
     .animals-section {
+        height: 1014px;
         padding-top: 70px;
     }
     .animals {
@@ -959,6 +1023,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
 
 @media screen and (max-width: 640px) {
     .animals-section {
+        height: 1014px;
         padding-top: 70px;
     }
     .animals {
@@ -1625,6 +1690,16 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
     .comment-card {
         height: 77px;
     }
+    .testimonials-section {
+        height: 650px;
+        justify-content: normal;
+    }
+    .testimonials-decoration {
+        padding-top: 20px;
+    }
+    .testimonials-button {
+        width: 240px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1636,6 +1711,9 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
     }
     .comment-card {
         height: 77px;
+    }
+    .testimonials-decoration {
+        padding-top: 0;
     }
 }
 
@@ -1931,7 +2009,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
     }
     .social-networks {
         position: relative;
-        bottom: 90px;
+        bottom: 88px;
     }
     .social-item {
         padding-bottom: 20px;
@@ -1943,11 +2021,16 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
         width: 82px;
     }
     .footer-button-container {
-        height: 92px;
+        height: 121px;
     }
     .contacts-container {
         justify-content: space-between;
         padding-top: 0;
+    }
+    h2.logo-title {
+        font-size: 19px;
+        line-height: 23px;
+        text-align: center;
     }
 }
 
@@ -1984,8 +2067,6 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
         width: 100%;
     }
     h2.logo-title {
-        font-size: 19px;
-        line-height: 23px;
         width: 128px;
     }
     .footer-button-container {
