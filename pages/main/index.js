@@ -47,6 +47,7 @@ list.forEach(item =>{
 const burgerMenu = document.querySelector('.burger-menu')
 const menuContainer = document.querySelector('.menu-container')
 const menuLogo = document.querySelector('.menu-logo-container')
+const crossContainer = document.querySelector('.cross-container')
 const menuList = document.querySelectorAll('.menu-list li a')
 
 burgerMenu.addEventListener('click', () =>{
@@ -54,6 +55,10 @@ burgerMenu.addEventListener('click', () =>{
 })
 
 menuLogo.addEventListener('click', () =>{
+    menuContainer.classList.remove('block')
+})
+
+crossContainer.addEventListener('click', () =>{
     menuContainer.classList.remove('block')
 })
 
