@@ -68,18 +68,27 @@ menuList.forEach(item =>{
     })
 })
 
-const feed_list = document.querySelectorAll('.feed-sum-container .feed-sum-list')
+const feedList = document.querySelectorAll('.feed-sum-list')
+let feedInput = document.querySelectorAll('.feed-amount-input')
 
-feed_list.forEach(item =>{
+feedList.forEach(item =>{
     item.addEventListener('click', (e) =>{
-        feed_list.forEach(el=>{ el.classList.remove('highlighted-num'); });
+        feedList.forEach(el=>{ el.classList.remove('highlighted-num'); });
         item.classList.add('highlighted-num')
+        const feedNum = item.querySelector('.feed-sum-num')
+        feedInput = document.querySelectorAll('.feed-amount-input')[0].value = feedNum.innerHTML.slice(1)
     })
 })
 
-feed_list.forEach(item =>{
+feedList.forEach(item =>{
+    item.addEventListener('focus', (e) =>{
+
+    })
+})
+
+feedList.forEach(item =>{
     item.addEventListener('click', (e) =>{
-        feed_list.forEach(el=>{ el.classList.remove('highlighted-100'); });
+        feedList.forEach(el=>{ el.classList.remove('highlighted-100'); });
         item.classList.add('highlighted-num')
     })
 })

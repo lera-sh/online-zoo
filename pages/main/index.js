@@ -80,7 +80,6 @@ let slideDownIndex = 1;
 
 arrows.forEach(arrow => {
     arrow.addEventListener('click', () => {
-        console.log(arrow)
         if(arrow.id == 'left-arr') {
             carouselUp.scrollLeft += -firstCardWidth
             plusUpSlides(-1)
@@ -96,8 +95,6 @@ arrows.forEach(arrow => {
             carouselDown.scrollLeft += firstCardWidth
             plusDownSlides(1);
         }
-        console.log(slideUpIndex)
-        console.log(slideDownIndex)
         showUpSlides(slideUpIndex);
         showDownSlides(slideDownIndex);
     })
