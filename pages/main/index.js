@@ -68,7 +68,133 @@ menuList.forEach(item =>{
     })
 })
 
+const carousel = document.querySelector('.animal-container')
+const carouselUp = document.querySelector('.carousel-up')
+const carouselDown = document.querySelector('.carousel-down')
+const firstCard = carousel.querySelectorAll('.animal-card')[0];
+const arrows = document.querySelectorAll('.animal-arrow')
+
+let firstCardWidth = firstCard.clientWidth + 20;
+let slideUpIndex = 1;
+let slideDownIndex = 1;
+
+arrows.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+        console.log(arrow)
+        if(arrow.id == 'left-arr') {
+            carouselUp.scrollLeft += -firstCardWidth
+            plusUpSlides(-1)
+        } else {
+            carouselUp.scrollLeft += firstCardWidth
+            plusUpSlides(1);
+        }
+
+        if(arrow.id == 'left-arr') {
+            carouselDown.scrollLeft += -firstCardWidth
+            plusDownSlides(-1)
+        } else {
+            carouselDown.scrollLeft += firstCardWidth
+            plusDownSlides(1);
+        }
+        console.log(slideUpIndex)
+        console.log(slideDownIndex)
+        showUpSlides(slideUpIndex);
+        showDownSlides(slideDownIndex);
+    })
+})
+
+function plusUpSlides(n) {
+    showUpSlides(slideUpIndex += n);
+}
+
+function plusDownSlides(n) {
+    showDownSlides(slideDownIndex += n);
+}
+
+function showUpSlides(n) {
+    let slides = document.querySelectorAll(".up-card");
+    if (n > slides.length - 2) {slideUpIndex = 1}
+    if (n < 1) {slideUpIndex = slides.length - 2}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideDownIndex - 1].style.display = "block"
+    slides[slideDownIndex].style.display = "block"
+    slides[slideDownIndex + 1].style.display = "block"
+}
+
+function showDownSlides(n) {
+    let slides = document.querySelectorAll(".down-card");
+    if (n > slides.length - 2) {slideDownIndex = 1}
+    if (n < 1) {slideDownIndex = slides.length - 2}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideDownIndex - 1].style.display = "block"
+    slides[slideDownIndex].style.display = "block"
+    slides[slideDownIndex + 1].style.display = "block"
+}
+
+const slider = document.querySelector('input[type="range"]')
+const comments = document.querySelector('.user-comments-container')
+
+const mediaQuery = window.matchMedia('screen and (max-width: 1300px)')
+let visibleCommentsCount
+
+const toggleHiddenOnCommentsNodes = (nodes, offset = 0) => {
+    const till = offset + visibleCommentsCount
+    nodes.forEach((x, i) => {
+        if (i >= offset && i < till) {
+            x.classList.remove('hidden')
+
+            return
+        }
+        x.classList.add('hidden')
+    })
+}
+
+const handleMediaQueryChange = mediaQuery => {
+    if (mediaQuery.matches) {
+        visibleCommentsCount = 3
+    } else {
+        visibleCommentsCount = 4
+    }
+    toggleHiddenOnCommentsNodes([...comments.children])
+}
+
+handleMediaQueryChange(mediaQuery)
+mediaQuery.addEventListener('change', handleMediaQueryChange)
+
+slider.addEventListener('input', event => {
+    toggleHiddenOnCommentsNodes([...comments.children], event.target.value - 1)
+})
+
+const testimonials = document.querySelectorAll('.testimonials-border')
+const media = window.matchMedia('screen and (max-width: 999px)')
+
+const testimonialsMedia = media => {
+    if (media.matches) {
+        testimonials.forEach(item => {
+            const popup = item.querySelector('.popup-comment')
+            const popupCross = item.querySelector('.cross-container-testimonials')
+
+            item.addEventListener('click', (e) => {
+                popup.classList.add('flex')
+            })
+
+            popupCross.addEventListener('click', (e) => {
+                e.stopPropagation()
+                popup.classList.remove('flex')
+            })
+        })
+    }
+}
+
+testimonialsMedia(media)
+media.addEventListener('change', testimonialsMedia)
+
 const footer_list = document.querySelectorAll('.footer-nav li a')
+
 footer_list.forEach(item =>{
     item.addEventListener('mousedown', (e) =>{
         item.classList.add('highlighted')
