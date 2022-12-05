@@ -522,7 +522,7 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
     }
     .start-title {
         font-size: 28px;
-        left: calc(50% - 2px/2 + 10px);
+        left: calc(70% - 2px/2 + 0px);
         line-height: 21px;
         top: 70px;
         width: 130px;
@@ -532,6 +532,18 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
     }
     .start-button {
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .start-title {
+        left: calc(60% - 2px/2 + 0px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .start-title {
+        left: calc(50% - 2px/2 + 7px);
     }
 }
 
