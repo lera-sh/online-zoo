@@ -80,19 +80,6 @@ feedList.forEach(item =>{
     })
 })
 
-feedList.forEach(item =>{
-    item.addEventListener('focus', (e) =>{
-
-    })
-})
-
-feedList.forEach(item =>{
-    item.addEventListener('click', (e) =>{
-        feedList.forEach(el=>{ el.classList.remove('highlighted-100'); });
-        item.classList.add('highlighted-num')
-    })
-})
-
 const footer_list = document.querySelectorAll('.footer-nav li a')
 const footer_main = document.querySelector('.footer-main')
 
