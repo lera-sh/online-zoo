@@ -1,0 +1,11 @@
+{
+  "name": "online-zoo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lera-sh/online-zoo.git",
+  "author": "Valeria Shirko <valerka.shirko@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
