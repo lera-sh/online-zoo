@@ -825,33 +825,6 @@ body, html, ul, ol, li, p, h1, h2, h3, h4 {
     .item-1000 {
         display: none;
     }
-    .highlighted-100::before {
-        content: "";
-        width: 37px;
-        height: 37px;
-        border: 2px solid #e47209;
-        border-radius: 50%;
-        position: absolute;
-        top: -16px;
-        left: -16px;
-        transition: all 0.2s ease;
-        z-index: -1;
-    }
-    .highlighted-100::after {
-        content: "";
-        width: 20px;
-        height: 20px;
-        border: 2px solid #e47209;
-        border-radius: 50%;
-        position: absolute;
-        top: -8px;
-        left: -8px;
-        z-index: -1;
-        transition: all 0.2s ease;
-    }
-    .highlighted-100 > .feed-sum-num {
-        color: #FE9013;
-    }
     .feed-slider {
         width: 600px;
     }
